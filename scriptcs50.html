@@ -2,8 +2,10 @@
     <html>
         <head>
            <script>
+           
             function greet(){
-                alert("hello");
+                let name= document.querySelector('#name').value
+                alert('hello, '+ name);
             }
            </script>
            
@@ -13,7 +15,7 @@
         </head>
         <body>
            <form onsubmit="greet();return false" >
-           <input autofocus aria-autocomplete="off" placeholder="name " type="text">
+           <input autofocus aria-autocomplete="off" id="name" placeholder="name " type="text">
            <button type="submit">greet</button>
            </form>
         </body>
