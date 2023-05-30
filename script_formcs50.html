@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        
+           
+            <title>
+                javascript
+            </title>
+        </head>
+        <body>
+           <form >
+           <input autofocus aria-autocomplete="off" id="name" placeholder="name " type="text">
+           <button type="submit">greet</button>
+           </form>
+           <script>
+           
+            document.querySelector('form').addEventListener('submit',function(event ){
+             name=document.querySelector('#name').value;
+             alert('hello ,'+ name);
+             event.preventDefault();// this is not to go to server prevent from normal behavior
+                 //from form inside that add event listner  
+            });
+            </script>
+        </body>
+    </html>
